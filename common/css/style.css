@@ -8,22 +8,18 @@ a {
     text-decoration: none;
 }
 
+/*ヘッダー、一番上の部分*/
+
+.header {
+    background-color: blue;
+}
 .logo {
     float: left;
 }
 .logo a {
     color: white;
-}
-
-/*ヘッダー、一番上の部分*/
-.top{
-    background-image: url(../../img/sample1.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position: center center;
-    background-attachment: fixed;
-    width: auto;
-    height: 600px;
+    padding-bottom: 10px;
+    padding-left: 10px;
 }
 
 .navigation {
@@ -42,10 +38,65 @@ a {
     color: white;
 }
 
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+    list-style:  none;
+    margin:  0;
+    padding: 0;
+}
+
+.navi-item {
+    margin: 10px;
+    font-size: 1.0rem;
+}
+.navi-item a {
+    color: white;
+}
+
+
+/*１番目の要素*/
+.visual-top {
+    background-image: url(../../img/sample1.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    /*background-attachment: fixed;*/
+    width: 100%;
+    height: 600px;
+}
+
+.top{
+    width: 950px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+
 .site-title {
     list-style:  none;
     margin:  0;
     padding: 0;
+}
+
+.knowledge-top-main{
+    display: flex;
+    clear: both;
+    justify-content: space-between;
+}
+
+.knowledge-pr{
+    margin-right: 100px;
+}
+
+.knowledge-pr-image {
+    width: 350px;
+    height: 250px;
+    box-sizing: border-box;
+    background: #f2f2f2;
+    margin-top: 11rem;
+    margin-right: 50px;
+    line-height: 1.4;
 }
 
 .main-title {
@@ -55,43 +106,31 @@ a {
     margin-left: 30px;
     line-height: 1.4;
     padding-top: 13rem;
-    left: 0;
     color: white;
 }
 
-.knowledge-main-test{
-    clear: both;
-    display: flex;
-    justify-content: space-between;
-}
 
-.knowledge-pr{
-    float: left;
-}
-.knowledge-pr-image {
-    float: right;
-    width: 450px;
-    height: 250px;
-    box-sizing: border-box;
-    background: #f2f2f2;
-    margin-top: 11rem;
-    margin-right: 50px;
-    line-height: 1.4;
-    margin-left: 30px;
-}
 
 /*2番目の要素*/
-.knowledge-course-main {
+
+.visual-knowledge-course-main {
     background-image: url(../../img/sample2.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center center;
     /*background-attachment: fixed;*/
     width: auto;
-    height: 600px;
+    height: 700px;
 }
+
+.knowledge-course-main {
+    width: 950px;
+    height: 700px;
+    margin: 0 auto;
+}
+
 .knowledge-course {
-    margin-left: 30px;
+    margin-right: 60px;
 }
 
 .course-explain {
@@ -115,7 +154,7 @@ a {
 }
 
 .course-image {
-    width: 450px;
+    width: 350px;
     height: 250px;
     box-sizing: border-box;
     background: #f2f2f2;
@@ -145,16 +184,15 @@ a {
     height: 600px;
 }
 
-
 .course-list-explain {
     text-align: right;
     font-size: 3rem;
     line-height: 1.4;
     padding-top: 1rem;
+    padding-right: 1rem;
     color: white;
     margin-bottom: 10px;
 }
-
 
 /*タイル型(grid)*/
 .grid {
@@ -190,6 +228,12 @@ a {
 
 
 /*4番目の要素*/
+
+.visual-douga-hensyu {
+    width: 100%;
+    height: 600px;
+}
+
 .douga-hensyu{
     position: relative;
     /*
@@ -204,18 +248,17 @@ a {
     object-fit: cover;
     height: 600px;
     */
-    width: auto;
+    width: 1200px;
     height: 600px;
 }
-
 
 .bgImg {
     clip-path: polygon(0 0, 65% 0, 80% 100%, 0 100%);
     height: 600px;
-    width: 70%;
+    width: 60%;
+    max-width: 100%;
     object-fit: cover;
 }
-
 
 .align-right{
     position: absolute;
@@ -226,27 +269,11 @@ a {
     height: 600px;
     text-align: right;
     margin-right: 10px;
-    padding-right: 50px;
+    padding-left: 200px;
 }
 .douga-hensyu-text1{
     text-align: right;
-}
-
-/*5番目の要素*/
-.douga-hensyu-where{
-    background-image: url(../../img/japan.png);
-    background-color:aqua;
-    background-repeat: no-repeat;
-    /*background-size: cover;*/
-    background-size: contain;
-    background-position: center center;
-    width: 100%;
-    height: 600px;
-
-}
-
-.douga-hensyu-text1{
-    font-size: 3rem;
+    font-size: 4rem;
     text-align: right;
     margin-top: 2rem;
     line-height: 1.4;
@@ -254,19 +281,108 @@ a {
     color: black;
 }
 
-/*6番目の要素*/
-.news-main {
-    background-color: #DDDDDD;
+.douga-hensyu-text2 {
+    font-size: 5rem;
+}
+
+.douga-hensyu-explain {
+    padding-left: 500px;
+    text-align: left;
+}
+
+
+/*5番目の要素*/
+
+.visual-douga-hensyu-where {
+    background-color:cadetblue;
+    width: 100%;
     height: 600px;
+}
+
+.douga-hensyu-where{
+    background-image: url(../../img/japan.png);
+    background-repeat: no-repeat;
+    /*background-size: cover;*/
+    background-size: cover;
+    background-position: center center;
+    width: 950px;
+    height: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.douga-hensyu-where-button-hokaido {
+    position: absolute;
+    left: 500px;
+}
+.douga-hensyu-where-button-touhoku {
+    position: absolute;
+    top: 280px;
+    left: 700px;
+}
+.douga-hensyu-where-button-koushinetsu {
+    position: absolute;
+    top: 200px;
+    left: 300px;
+}
+.douga-hensyu-where-button-kanto {
+    position: absolute;
+    top: 420px;
+    left: 580px;
+}
+.douga-hensyu-where-button-kansai {
+    position: absolute;
+    top: 500px;
+    left: 300px;
+}
+.douga-hensyu-where-button-kyusyu {
+    position: absolute;
+    top: 280px;
+    left: 100px;
+}
+
+.where-btn {
+    display: inline-block;
+    font-size: 1.5rem;
+    background-color:gainsboro;
+    border-radius: 8px;
+    padding: .75rem 1.5rem;
+    color: black;
+    margin: 20px 10px 50px 0;
+}
+.where-btn:hover {
+    background-color:aqua;
+}
+
+
+/*6番目の要素*/
+
+.visual-news-main {
+    background-color: #DDDDDD;
+    width: 100%;
+    height: 600px;
+}
+
+.news-main {
     display: flex;
     justify-content: space-between;
-    padding-left: 30px;
     padding-top: 30px;
+    width: 950px;
+    height: 500px;
+    margin: 0 auto;
 }
+
+.course-more-news{
+    width: 950px;
+    margin: 0 auto;
+}
+
 .news-title {
     font-size: 3rem;
     text-align: left;
+    padding:10px;
 }
+
 /* 横並び */
 .flex {
     display: flex; /*横並び*/
@@ -281,13 +397,11 @@ a {
     overflow: hidden;
     position: relative;
   }
-  .flex .text {
+  .flex p {
     margin: 0 0 0 20px;
     padding: 0;
-  }
-.news-text {
     width: 300px;
-}
+  }
 
 .course-more{
     clear: both;
@@ -303,12 +417,12 @@ a {
     height: 150px;
     box-sizing: border-box;
     background: #f2f2f2;
-    margin: 10px 30px 10px 30px;
+    margin: 60px 30px 10px 30px;
     line-height: 1.4;
 }
   
 
-/*フッだーのスタイル*/
+/*フッダーのスタイル*/
 
 .page-footer {
     background-image: url(../../img/Crystal-clear-turquoise-water.JPG);
@@ -347,7 +461,7 @@ a {
     color: black;
 }
 
-
+/*スマホ時の表示*/
 @media screen and (max-width:600px) {
     /*画面サイズが600px以下の場合に適用*/
     html {
@@ -361,14 +475,22 @@ a {
     }
 
     /*ヘッダー、一番上の部分*/
-    .top{
-        background-image: url(../../img/sample1.jpg);
-        background-repeat: no-repeat;
-        background-size:cover;
-        background-position: center center;
-        background-attachment: fixed;
-        width: 100vw;
-        height: 800px;
+
+    .header {
+        background-color: blue;
+    }
+    /*.logo {
+        float: left;
+    }*/
+    .logo a {
+        color: white;
+        padding-bottom: 10px;
+        padding-left: 10px;
+    }
+    .logo {
+        float: none;
+        padding-top: 30px;
+        text-align: center;
     }
 
     .navigation {
@@ -384,35 +506,44 @@ a {
         margin: 10px;
         font-size: 0.6rem;
     }
+
     .navi-item a {
         color: white;
     }
 
-    .logo {
-        float: none;
-        padding-top: 30px;
-        text-align: center;
+
+    /*1番目の要素*/
+    .visual-top {
+        background-image: url(../../img/sample1.jpg);
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center center;
+        width: 100vw;
+        height: 700px;
     }
-
-
-    .knowledge-main-test{
+    
+    .top{
+        width: 100vw;
+        height: 700px;
+        margin: 0 auto;
+    }
+    
+    .site-title {
+        list-style:  none;
+        margin:  0;
+        padding: 0;
+    }
+    
+    .knowledge-top-main{
         display: block;
         justify-content: flex-start;
     }
-        
-    .main-title {
-        font-size: 2rem;
-        text-align: center;
-        margin: 0;
-        margin-top: 2rem;
-        padding-top: 9rem;
-        color: white;
-    }
-
+    
     .knowledge-pr{
+        margin: 0;
         float: none;
     }
-
+    
     .knowledge-pr-image {
         float: none;
         width: 70vw;
@@ -424,18 +555,32 @@ a {
         margin-left: auto;
         display: block;
     }
+    
+    .main-title {
+        font-size: 2rem;
+        text-align: center;
+        margin: 0;
+        padding-top: 9rem;
+        color: white;
+    }
 
 
     /*2番目の要素*/
-    .knowledge-course-main {
+
+    .visual-knowledge-course-main {
         background-image: url(../../img/sample2.jpg);
         background-repeat: no-repeat;
         background-size:cover;
         background-position: center center;
-        /*background-attachment: fixed;*/
-        width: auto;
+        width: 100vw;
         height: 900px;
     }
+
+    .knowledge-course-main {
+        width: 100vw;
+        height: 900px;
+    }
+
     .knowledge-course {
         margin-left: 30px;
         margin-right: 30px;
@@ -519,13 +664,101 @@ a {
         margin-bottom: .5rem;
     }
 
+    .course-more {
+        width: 100vw;
+        text-align: center;
+        margin: 40px 0 20px 0;
+    }
+    .more-btn {
+        display: inline-block;
+        font-size: 0.8rem;
+        background-color:white;
+        border-radius: 8px;
+        padding: .75rem 3rem;
+        color: black;
+    }
+    .more-btn:hover {
+        background-color:black;
+        color: white;
+    }
+
+
+    /*4番目の要素*/
+
+    .visual-douga-hensyu {
+        width: 100vw;
+        height: 800px;
+    }
+
+    .douga-hensyu{
+        position: relative;
+        /*
+        background-image: url(../../img/DSC02467.jpg);
+        clip-path: polygon(0 0, 65% 0, 80% 100%, 0 100%);
+        position: relative;
+        background-color: white;
+        width: auto;
+        background-color: white;
+        background-repeat: no-repeat;
+        background-size:100% auto;
+        object-fit: cover;
+        height: 600px;
+        */
+        width: 100vw;
+        height: 600px;
+    }
+
+    .bgImg {
+        clip-path: polygon(0 0, 55% 0, 80% 100%, 0 100%);
+        height: 600px;
+        width: 65vw;
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+    .align-right{
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        height: 600px;
+        text-align: right;
+        padding-left: 100px;
+    }
+
+    .douga-hensyu-text1{
+        margin: 0;
+        text-align: right;
+        font-size: 1.7rem;
+        text-align: right;
+        line-height: 1.4;
+        padding-top: 13rem;
+        color: black;
+    }
+
+    .douga-hensyu-text2 {
+        font-size: 2.5rem;
+    }
+
+    .douga-hensyu-explain {
+        padding-left: 130px;
+        text-align: left;
+    }
+
 
     /*6番目の要素*/
+
+    .visual-news-main {
+        background-color: #DDDDDD;
+        width: 100vw;
+        height: 950px;
+    }
+
     .news-main {
         background-color: #DDDDDD;
-        height: 950px;
+        width: 100vw;
+        height: 850px;
         display: block;
-        justify-content: space-between;
         padding-left: 0px;
         padding-top: 30px;
     }
@@ -534,9 +767,9 @@ a {
         text-align: center;
         padding-bottom: 30px;
     }
-    /* 横並び */
+
     .flex {
-        display: block; /*横並び*/
+        display: block; /*縦並び*/
     }
     .flex img {
         width: 200px;
@@ -552,14 +785,16 @@ a {
         display: block;
     }
 
-    .news-text {
+    .flex p {
         width: 100%;
         padding-bottom: 20px;
         text-align: center;
     }
 
-    .course-more{
+    .course-more-news{
         clear: both;
+        width: 100vw;
+        padding-top: 30px;
         text-align: center;
     }
 
