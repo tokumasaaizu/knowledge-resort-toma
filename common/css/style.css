@@ -18,7 +18,6 @@ a {
 }
 .logo a {
     color: white;
-    padding-bottom: 10px;
     padding-left: 10px;
 }
 
@@ -93,7 +92,6 @@ a {
     width: 350px;
     height: 250px;
     box-sizing: border-box;
-    background: #f2f2f2;
     margin-top: 11rem;
     margin-right: 50px;
     line-height: 1.4;
@@ -142,6 +140,10 @@ a {
 }
 .course-text {
     color: white;
+    padding-top: 20px;
+    font-size: 16px;
+    /*行間設定*/
+    line-height: 1.7;
 }
 
 .knowledge-course-btn {
@@ -158,10 +160,17 @@ a {
     height: 250px;
     box-sizing: border-box;
     background: #f2f2f2;
-    margin-top: 11rem;
     margin-right: 50px;
     line-height: 1.4;
     margin-left: 30px;
+}
+
+.knowledge-course-right p {
+    color: white;
+    text-align: right;
+    margin-top: 9rem;
+    padding-bottom: 10px;
+    margin-right: 50px;
 }
 
 .btn {
@@ -180,18 +189,16 @@ a {
 
 /*3番目の要素*/
 .knowledge-course-list-main {
-    background-color: #FFE4C4;
+    background-color: #f5deb3;
     height: 600px;
 }
 
-.course-list-explain {
+.knowledge-course-list h2 {
     text-align: right;
     font-size: 3rem;
     line-height: 1.4;
-    padding-top: 1rem;
-    padding-right: 1rem;
+    padding: 2rem;
     color: white;
-    margin-bottom: 10px;
 }
 
 /*タイル型(grid)*/
@@ -213,15 +220,15 @@ a {
     text-align: center;
     margin: 40px 0 20px 0;
 }
-.more-btn {
+.course-more a {
     display: inline-block;
-    font-size: 0.8rem;
+    font-size: 1.0rem;
     background-color:white;
     border-radius: 8px;
-    padding: .75rem 3rem;
+    padding: .75rem 5rem;
     color: black;
 }
-.more-btn:hover {
+.course-more a:hover {
     background-color:black;
     color: white;
 }
@@ -272,7 +279,7 @@ a {
 }
 .douga-hensyu-text1{
     text-align: right;
-    font-size: 4rem;
+    font-size: 2rem;
     text-align: right;
     margin-top: 2rem;
     line-height: 1.4;
@@ -280,13 +287,24 @@ a {
     color: black;
 }
 
-.douga-hensyu-text2 {
+.text1 {
+    font-size: 4rem;
+    color:#f5deb3;
+}
+
+.text2 {
     font-size: 5rem;
+    color:dodgerblue;
+}
+
+.douga-hensyu-text2 {
+    font-size: 2rem;
 }
 
 .douga-hensyu-explain {
     padding-left: 500px;
     text-align: left;
+    line-height: 1.7;
 }
 
 
@@ -371,13 +389,6 @@ a {
     margin: 0 auto;
 }
 
-.course-more-news{
-    clear: both;
-    width: 100vw;
-    padding-top: 30px;
-    text-align: center;
-}
-
 .news-title {
     font-size: 3rem;
     text-align: left;
@@ -404,9 +415,21 @@ a {
     width: 300px;
   }
 
-.course-more{
-    clear: both;
+.course-more-news {
     text-align: center;
+    margin: 30px 0 20px 0;
+}
+.course-more-news a {
+    display: inline-block;
+    font-size: 1.0rem;
+    background-color:white;
+    border-radius: 8px;
+    padding: .75rem 5rem;
+    color: black;
+}
+.course-more-news a:hover {
+    background-color:black;
+    color: white;
 }
 
 .news-right {
@@ -485,7 +508,6 @@ a {
     }*/
     .logo a {
         color: white;
-        padding-bottom: 10px;
         padding-left: 10px;
     }
     .logo {
@@ -550,11 +572,14 @@ a {
         width: 70vw;
         height: 150px;
         box-sizing: border-box;
-        background: #f2f2f2;
-        margin-top: 11rem;
-        margin-right: auto;
-        margin-left: auto;
+        margin: 0 auto;
+        margin-top: 8rem;
+
         display: block;
+    }
+
+    .knowledge-pr-image video {
+        width: 70vw;
     }
     
     .main-title {
@@ -610,7 +635,6 @@ a {
 
     .course-image {
         margin: 0;
-        margin-top: 7rem;
         width: 70vw;
         height: 150px;
         box-sizing: border-box;
@@ -619,6 +643,15 @@ a {
         margin-left: auto;
         display: block;
     }
+
+    .knowledge-course-right p {
+        margin: 0;
+        color: white;
+        text-align: center;
+        margin-top: 6rem;
+        padding-bottom: 10px;
+    }
+
 
     .btn {
         display: inline-block;
@@ -730,15 +763,27 @@ a {
     .douga-hensyu-text1{
         margin: 0;
         text-align: right;
-        font-size: 1.7rem;
+        font-size: 1.0rem;
         text-align: right;
         line-height: 1.4;
         padding-top: 13rem;
         color: black;
     }
+    .text1 {
+        margin: 0;
+        text-align: right;
+        font-size: 1.7rem;
+        text-align: right;
+        line-height: 1.4;
+        padding-top: 13rem;
+    }
 
     .douga-hensyu-text2 {
-        font-size: 2.5rem;
+        font-size: 1.0rem;
+    }
+
+    .text2 {
+        font-size:2.5rem;
     }
 
     .douga-hensyu-explain {
@@ -817,7 +862,7 @@ a {
     .visual-news-main {
         background-color: #DDDDDD;
         width: 100vw;
-        height: 950px;
+        height: 1050px;
     }
 
     .news-main {
