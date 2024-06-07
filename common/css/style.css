@@ -328,6 +328,13 @@ a {
     position: relative;
 }
 
+.douga-hensyu-where h2 {
+    font-size: 4rem;
+    text-align: left;
+    padding: 2rem;
+    color: white;
+}
+
 .douga-hensyu-where-button-hokaido {
     position: absolute;
     left: 500px;
@@ -810,6 +817,13 @@ a {
         height: 600px;
         margin: 0 auto;
         position: relative;
+    }
+
+    .douga-hensyu-where h2 {
+        font-size: 3rem;
+        text-align: center;
+        padding: 2rem;
+        color: white;
     }
 
     .douga-hensyu-where-button-hokaido {
