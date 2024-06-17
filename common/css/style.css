@@ -10,15 +10,15 @@ a {
 
 /*ヘッダー、一番上の部分*/
 
-.header {
-    background-color: blue;
-}
+
 .logo {
     float: left;
+    padding-left: 20px;
+    margin-top: 20px;
 }
+
 .logo a {
     color: white;
-    padding-left: 10px;
 }
 
 .navigation {
@@ -31,6 +31,7 @@ a {
 
 .navi-item {
     margin: 10px;
+    margin-top: 30px;
     font-size: 1.0rem;
 }
 .navi-item a {
@@ -45,10 +46,7 @@ a {
     padding: 0;
 }
 
-.navi-item {
-    margin: 10px;
-    font-size: 1.0rem;
-}
+
 .navi-item a {
     color: white;
 }
@@ -62,7 +60,7 @@ a {
     background-position: center center;
     /*background-attachment: fixed;*/
     width: 100%;
-    height: 600px;
+    height: 650px;
 }
 
 .top{
@@ -134,7 +132,7 @@ a {
 .course-explain {
     font-size: 2rem;
     text-align: left;
-    line-height: 1.4;
+    line-height: 1.7;
     padding-top: 10rem;
     color: white;
 }
@@ -143,7 +141,7 @@ a {
     padding-top: 20px;
     font-size: 16px;
     /*行間設定*/
-    line-height: 1.7;
+    line-height: 2.0;
 }
 
 .knowledge-course-btn {
@@ -195,7 +193,7 @@ a {
 
 .knowledge-course-list h2 {
     text-align: right;
-    font-size: 3rem;
+    font-size: 4rem;
     line-height: 1.4;
     padding: 2rem;
     color: white;
@@ -283,13 +281,14 @@ a {
     text-align: right;
     margin-top: 2rem;
     line-height: 1.4;
-    padding-top: 13rem;
+    padding-top: 5rem;
     color: black;
 }
 
 .text1 {
     font-size: 4rem;
-    color:#f5deb3;
+    /*color:#f5deb3;*/
+    color: #daa520;
 }
 
 .text2 {
@@ -406,21 +405,23 @@ a {
 .flex {
     display: flex; /*横並び*/
   }
-  .flex img {
-    width: 200px;
-    height: 100px;
-    background-color: aliceblue;
-    border-radius: 16px;
-    margin-bottom: 1.5rem;
-    object-fit: cover;
-    overflow: hidden;
-    position: relative;
-  }
-  .flex p {
-    margin: 0 0 0 20px;
-    padding: 0;
-    width: 300px;
-  }
+
+.flex img {
+width: 200px;
+height: 100px;
+background-color: aliceblue;
+border-radius: 16px;
+margin-bottom: 1.5rem;
+object-fit: cover;
+overflow: hidden;
+position: relative;
+}
+
+.flex p {
+margin: 10px 0 0 20px;
+padding: 0;
+width: 300px;
+}
 
 .course-more-news {
     text-align: center;
@@ -461,18 +462,31 @@ a {
     background-size: cover;
 }
 
+.footer-visual-top {
+    display: flex;
+    clear: both;
+    justify-content: space-between;
+}
+
 .site-title-footer {
     text-align: center;
     padding-top: 30px;
     margin-left: 30px;
     margin-bottom: 20px;
+    font-size: 2rem;
+    color: white;
+}
+
+.footer-top2 {
+    padding-right: 100px;
 }
 
 .site-SNS-footer {
-    text-align: center;
+    text-align: left;
     margin-top: 30px;
-    margin-left: 30px;
     margin-bottom: 20px;
+    color: white;
+    font-size: 1.7rem;
 }
 
 .sns-icons {
@@ -488,8 +502,9 @@ a {
 }
 
 .copyright {
+    padding-bottom: 10px;
     text-align: center;
-    color: black;
+    color: white;
 }
 
 /*スマホ時の表示*/
@@ -506,10 +521,6 @@ a {
     }
 
     /*ヘッダー、一番上の部分*/
-
-    .header {
-        background-color: blue;
-    }
     /*.logo {
         float: left;
     }*/
@@ -549,7 +560,7 @@ a {
         background-size:cover;
         background-position: center center;
         width: 100vw;
-        height: 700px;
+        height: 750px;
     }
     
     .top{
@@ -680,9 +691,9 @@ a {
         padding-top: 30px;
     }
 
-    .course-list-explain {
+    .knowledge-course-list h2 {
         text-align: center;
-        font-size: 2rem;
+        font-size: 3rem;
         line-height: 1.4;
         padding-top: 1rem;
         color: white;
@@ -919,7 +930,7 @@ a {
     .course-more-news{
         clear: both;
         width: 100vw;
-        padding-top: 30px;
+        padding-top: 100px;
         text-align: center;
     }
 
@@ -937,6 +948,59 @@ a {
         box-sizing: border-box;
         background: #f2f2f2;
         line-height: 1.4;
+    }
+
+    /*フッダーのスタイル*/
+
+    .page-footer {
+        background-image: url(../../img/Crystal-clear-turquoise-water.JPG);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .footer-visual-top {
+        display: block;
+        clear: both;
+    }
+
+    .site-title-footer {
+        text-align: center;
+        padding-top: 30px;
+        margin-left: 30px;
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+        color: white;
+    }
+
+    .footer-top2 {
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .site-SNS-footer {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        color: white;
+        font-size: 0.9rem;
+    }
+
+    .sns-icons {
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+    }
+
+    .navigation-footer {
+        display: flex;
+        justify-content: center;
+        list-style:  none;
+    }
+
+    .copyright {
+        padding-bottom: 10px;
+        text-align: center;
+        color: white;
     }
 
 
